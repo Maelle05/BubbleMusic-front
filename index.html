@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble - Maëlle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+      <video id="video"></video>
+      <img id="cursor" src="./assets/cursor.svg">
+      <img id="menuGoList" src="./assets/menu.svg">
+      <div id="musicPlayer"></div>
+      <div id="skip"></div>
+      <div id="listAudio">
+        <h2>Recording history</h2>
+      </div>
+      <div id="menuContainer">
+          <div id="menu">
+              <h1>
+                  <span>B</span>
+                  <span>u</span>
+                  <span>b</span>
+                  <span>b</span>
+                  <span>l</span>
+                  <span>e</span>
+              </h1>
+              <p>Do you want to play music ?</p>
+              <div id="checkbox">
+                <input type="checkbox" id="hand" name="hand">
+                <label for="hand">Check to play with your own hand (need camera permissions)</label>
+              </div>
+              <button onclick="init()">Go !</button>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+    <script src="./audioRecorder.js"></script>
+    <script src="./handTrack.js"></script>
+    <script src="./bubble.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
