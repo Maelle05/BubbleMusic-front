@@ -47,7 +47,7 @@ function initAudioRec(){
               const audioData = event.target.result;
 
               (async () => {
-                fetch('http://localhost:5000/api/musics', {
+                fetch('https://bubblemusic.herokuapp.com/api/musics', {
                   method: 'POST',
                   headers: {
                     'Accept': 'application/json',

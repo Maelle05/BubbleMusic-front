@@ -114,7 +114,7 @@ function audioToView(data){
 
 function getAudioHistory(){
   let results
-  fetch('http://localhost:5000/api/musics')
+  fetch('https://bubblemusic.herokuapp.com/api/musics')
     .then(response => response.json())
     .then(json => {
       results = json
